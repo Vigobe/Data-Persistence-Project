@@ -8,11 +8,12 @@ using UnityEditor;
 [DefaultExecutionOrder(1000)] 
 public class MenuUI : MonoBehaviour
 {
+    private string namePlayer;
 
-    // Start is called before the first frame update
-    void Start()
+    public void ReadName(string name)
     {
-        
+        namePlayer = name;
+        Debug.Log(namePlayer);
     }
 
     public void StartNew()
